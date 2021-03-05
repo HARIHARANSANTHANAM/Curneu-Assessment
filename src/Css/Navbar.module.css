@@ -1,0 +1,17 @@
+.app_name_box{
+   display: flex;
+   width:100%;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo{
+    border-radius: 50%;
+}
+
+.brand_logo{
+    width:100px;
+}
+.brandname{
+    color:black;
+}
