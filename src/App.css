@@ -13,12 +13,9 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
+.container {
+  background-color:#282c34;
+  background-color: #331427;
   color: white;
 }
 
@@ -33,4 +30,10 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+nav{
+  background-color: black;
+  background:#f50057;
+  border:none;
 }

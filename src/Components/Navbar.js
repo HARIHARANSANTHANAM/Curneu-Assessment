@@ -7,14 +7,15 @@ function Navbar() {
       useEffect(() => {
         var elems = document.querySelectorAll('.sidenav');
          M.Sidenav.init(elems);
+      
       }, [])
 
     return (
         <div>
             <nav>
     <div className="nav-wrapper">
-
-      <a href="#!" className="brand-logo">PDF VIEWER</a>
+       &nbsp;&nbsp;
+      <a href="#!" className="brand-logo"> PDF VIEWER</a>
       <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
       <ul className="right hide-on-med-and-down">
         <li><a href="mobile.html"><i className="fa fa-print"></i>  Print PDF</a></li>
@@ -22,6 +23,8 @@ function Navbar() {
       </ul>
     </div>
   </nav>
+
+ 
 
   <ul className="sidenav" id="mobile-demo">
       <center><h5 className={navbarstyle.brandname}>PDF VIEWER</h5></center>

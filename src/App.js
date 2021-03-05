@@ -1,9 +1,16 @@
 import './App.css';
 import Navbar from './Components/Navbar';
+import Pdfreader from './Components/Pdfreader';
+
 function App() {
   return (
-    <div className="App-header">
+    <div>
       <Navbar></Navbar>
+      <div className="container">
+      <div className="container">
+      <Pdfreader/>
+      </div>
+      </div>
     </div>
   );
 }
