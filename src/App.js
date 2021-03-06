@@ -6,11 +6,7 @@ function App() {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="container">
-      <div className="container">
       <Pdfreader/>
-      </div>
-      </div>
     </div>
   );
 }

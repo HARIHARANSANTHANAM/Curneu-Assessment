@@ -3,10 +3,13 @@ import controlstyles from '../Css/Controls.module.css';
 
 function Controls(props) {
 
-    const{numPages,pageNumber,setPageNumber}=props;
+    const{numPages,pageNumber,setPageNumber,fileName,setRotatedoc,rotatedoc}=props;
 
 
+    const isfirstpage=pageNumber===1?"disabled":"";
     const islastpage=pageNumber!=numPages?"":"disabled";
+
+    
     const nextpage=()=>{
         if(numPages!=pageNumber)setPageNumber(pageNumber+1);
          console.log(islastpage);
@@ -21,21 +24,34 @@ function Controls(props) {
         if(numPages!=pageNumber) setPageNumber(numPages);
     }
 
+    const handleRotate=()=>{
+        if(rotatedoc==360)
+        {
+            setRotatedoc(0);
+        }
+        else{
+            setRotatedoc(rotatedoc+90);
+        }
+    }
 
-    const isfirstpage=pageNumber===1?"disabled":"";
     
 
     return (
-        <div style={{display:"flex",flexWrap:"wrap",width:"100%", background:"#f50057",borderRadius:"5px",height:"50px",color:"white",alignItems:"center",justifyContent:"center"}}>
+        <div style={{display:"flex",flexWrap:"wrap",width:"100%", background: "#461d3c" ,height:"50px",color:"white",alignItems:"center",justifyContent:"space-between"}} className="row">
            
+        <h6 className={controlstyles.file_name}>{fileName}</h6>
         <div className={controlstyles.page_controls}>
             
-            <button  className={`btn-floating waves-effect waves-light pink darken-4 ${isfirstpage}`} onClick={firstpage}><i class="fa fa-fast-backward " aria-hidden="true"></i></button>
-            <button className={`btn-floating waves-effect waves-light pink darken-4 ${isfirstpage}`}onClick={previouspage}><i class="fa fa-backward " aria-hidden="true"></i></button>
-            <input type="number" style={{width:"40px",border:"1px solid white",height:"20px",color:"white",background:"pink",margin:"0"}} value={pageNumber}></input><h6>/ {numPages}</h6>
-             <button className={`btn-floating waves-effect waves-light pink darken-4 ${islastpage}`} onClick={nextpage}  ><i class="fa fa-forward " aria-hidden="true"></i></button>
-             <button className={`btn-floating waves-effect waves-light pink darken-4 ${islastpage}`} onClick={lastpage} ><i class="fa fa-fast-forward " aria-hidden="true"></i></button>
+            <button  className={`btn-floating waves-effect waves-light pink darken-4 ${isfirstpage}`} onClick={firstpage}><i class="fa fa-angle-double-left " aria-hidden="true"></i></button>
+            <button className={`btn-floating waves-effect waves-light pink darken-4 ${isfirstpage}`}onClick={previouspage}><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+            <input type="number" style={{width:"30px",border:"1px solid white",height:"20px",color:"white",background:"#c51162",margin:"0"}} value={pageNumber}></input><h6>/ {numPages}</h6>
+             <button className={`btn-floating waves-effect waves-light pink darken-4 ${islastpage}`} onClick={nextpage}  ><i class="fa fa-angle-right " aria-hidden="true"></i></button>
+             <button className={`btn-floating waves-effect waves-light pink darken-4 ${islastpage}`} onClick={lastpage} ><i class="fa fa-angle-double-right " aria-hidden="true"></i></button>
            
+            </div>
+
+            <div className={controlstyles.tools}>
+            <button className={`btn waves-effect waves-light pink darken-4 `} onClick={handleRotate}  ><i class="fa fa-repeat" aria-hidden="true"></i> Rotate Doc</button>
             </div>
            
         </div>

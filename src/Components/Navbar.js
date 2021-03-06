@@ -18,7 +18,7 @@ function Navbar() {
       <a href="#!" className="brand-logo"> PDF VIEWER</a>
       <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
       <ul className="right hide-on-med-and-down">
-        <li><a href="mobile.html"><i className="fa fa-print"></i>  Print PDF</a></li>
+        <li><a href="mobile.html" onClick={window.print}><i className="fa fa-print"></i>  Print PDF</a></li>
         <li><a href="mobile.html"><i className="fa fa-download"></i> Download</a></li>
       </ul>
     </div>

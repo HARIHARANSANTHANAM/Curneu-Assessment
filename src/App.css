@@ -14,7 +14,6 @@
 }
 
 .container {
-  background-color:#282c34;
   background-color: #331427;
   color: white;
 }
@@ -35,5 +34,6 @@
 nav{
   background-color: black;
   background:#f50057;
+  background-color: #461d3c ;
   border:none;
 }

@@ -1,18 +1,51 @@
 .page_controls{
     display:flex;
     flex-wrap:nowrap;
-    width:50%;
+    width:30%;
      background:#f50057;
-     border-radius:5px;
+     background-color: #461d3c ;
      height:50px;
      color:white;
      align-items:center;
      justify-content:space-evenly;
 }
 
+.file_name{
+  width:30%;
+  text-overflow:  ellipsis;
+  white-space: nowrap;
+  overflow:hidden;
+}
+
+.tools{
+  width:25%;
+  display:flex;
+  flex-direction: row-reverse;
+}
+
 
 @media screen and (max-width: 600px) {
     .page_controls {
       width:100%;
+    }
+    .file_name{
+      width:100%;
+    }
+    .tools{
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 992px) {
+    .page_controls {
+      width:50%;
+    }
+
+    .file_name{
+      width:50%;
+    }
+    
+    .tools{
+      display: none;
     }
   }
