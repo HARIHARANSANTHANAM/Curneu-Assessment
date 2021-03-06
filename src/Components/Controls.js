@@ -34,6 +34,9 @@ function Controls(props) {
         }
     }
 
+    const handlePageno=(e)=>{
+        setPageNumber(Number(e.target.value));
+    }
     
 
     return (
@@ -44,7 +47,7 @@ function Controls(props) {
             
             <button  className={`btn-floating waves-effect waves-light pink darken-4 ${isfirstpage}`} onClick={firstpage}><i class="fa fa-angle-double-left " aria-hidden="true"></i></button>
             <button className={`btn-floating waves-effect waves-light pink darken-4 ${isfirstpage}`}onClick={previouspage}><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-            <input type="number" style={{width:"30px",border:"1px solid white",height:"20px",color:"white",background:"#c51162",margin:"0"}} value={pageNumber}></input><h6>/ {numPages}</h6>
+            <input type="number" style={{width:"30px",border:"1px solid white",height:"20px",color:"white",background:"#c51162",margin:"0"}} value={pageNumber} onChange={handlePageno}></input><h6>/ {numPages}</h6>
              <button className={`btn-floating waves-effect waves-light pink darken-4 ${islastpage}`} onClick={nextpage}  ><i class="fa fa-angle-right " aria-hidden="true"></i></button>
              <button className={`btn-floating waves-effect waves-light pink darken-4 ${islastpage}`} onClick={lastpage} ><i class="fa fa-angle-double-right " aria-hidden="true"></i></button>
            

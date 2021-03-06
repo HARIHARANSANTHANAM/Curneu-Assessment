@@ -5,7 +5,7 @@ import Pdfreader from './Components/Pdfreader';
 function App() {
   return (
     <div>
-      <Navbar></Navbar>
+      {/* <Navbar></Navbar> */}
       <Pdfreader/>
     </div>
   );

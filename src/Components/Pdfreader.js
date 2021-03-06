@@ -56,7 +56,7 @@ function Pdfreader() {
             rotatedoc={rotatedoc}
             />:<></>}<br></br>
             <div className="row">
-              <div className="col s12 m3  pink darken-4">
+              <div className="col s12 m3" style={{background:"#461d3c",boxShadow:"20px 20px 60px #371228,-20px -20px 60px #4b1836"}}>
             <RecentFiles  setFilePath={setFilePath}  recentfiles={recentfiles.reverse()}/>
             </div>
              <div className="col s12 m9">

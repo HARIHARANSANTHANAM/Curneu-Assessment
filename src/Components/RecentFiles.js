@@ -25,11 +25,11 @@ function RecentFiles(props) {
     return (
         <div>
             
-    <ul class="collapsible" style={{border:"none"}}>
+    <ul class="collapsible" style={{border:"none",background: "#461d3c"}}>
     <li>
-      <div class="collapsible-header" style={{ background: "#461d3c"}}><center><h6 style={{color:"white",border:"none"}}>Recently Opened Files</h6></center></div>
-      {recentfiles?<div  class="collapsible-body" style={{border:"none"}}><span> {recentfiles.slice(0,4).map(files=>{
-                    return (<h6 style={{color:"white"}} className={recent.file_name} onClick={()=>handlefile(files)}>{files.name}</h6>)
+      <div class="collapsible-header" style={{  background:"#331427"}}><center><h6 style={{color:"white",border:"none"}}>Recently Opened Files</h6></center></div>
+      {recentfiles?<div  class="collapsible-body" style={{border:"none",background: "#331427"}}><span> {recentfiles.slice(0,4).map(files=>{
+                    return (<h6 style={{color:"white"}} className={`${recent.file_name} pink darken-4`} onClick={()=>handlefile(files)}>{files.name}</h6>)
                   })}</span></div>:<></>}
     
     </li>
