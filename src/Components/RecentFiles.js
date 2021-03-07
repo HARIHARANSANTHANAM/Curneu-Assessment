@@ -3,23 +3,18 @@ import recent from '../Css/Sidepanel.module.css'
 import M from 'materialize-css';
 
 function RecentFiles(props) {
-    const {recentfiles,setFilePath}=props;
+    const {recentfiles,setFilePath,setfileName}=props;
 
     useEffect(() => {
         var elems = document.querySelectorAll('.collapsible');
          M.Collapsible.init(elems);
-      //   console.log(recentfiles);
-         
-
          localStorage.setItem("Recent_Used",JSON.stringify(recentfiles));
-         
-
     })
 
     const handlefile=(file)=>{
         console.log(file)
         setFilePath(file);
-     
+        setfileName(file.name);
     }
 
     return (
