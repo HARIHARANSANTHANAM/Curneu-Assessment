@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# App view 
+<img src="/public/assets/Images/Pdfview.JPG">
+
+# Components
+<img src="/public/assets/Images/Controls.JPG">
+<br>
+<img src="/public/assets/Images/Recentfiles.JPG">
+<br>
+<img src="/public/assets/Images/DocumentView.JPG">
+
 ## Available Scripts
 
 In the project directory, you can run:
