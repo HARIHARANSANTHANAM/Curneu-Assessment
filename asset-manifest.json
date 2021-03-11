@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Curneu-Assessment/static/css/main.81651906.chunk.css",
+    "main.js": "/Curneu-Assessment/static/js/main.f9e7fad4.chunk.js",
+    "main.js.map": "/Curneu-Assessment/static/js/main.f9e7fad4.chunk.js.map",
+    "runtime-main.js": "/Curneu-Assessment/static/js/runtime-main.442ccfda.js",
+    "runtime-main.js.map": "/Curneu-Assessment/static/js/runtime-main.442ccfda.js.map",
+    "static/js/2.dd95d419.chunk.js": "/Curneu-Assessment/static/js/2.dd95d419.chunk.js",
+    "static/js/2.dd95d419.chunk.js.map": "/Curneu-Assessment/static/js/2.dd95d419.chunk.js.map",
+    "static/js/3.3e960107.chunk.js": "/Curneu-Assessment/static/js/3.3e960107.chunk.js",
+    "static/js/3.3e960107.chunk.js.map": "/Curneu-Assessment/static/js/3.3e960107.chunk.js.map",
+    "index.html": "/Curneu-Assessment/index.html",
+    "static/css/main.81651906.chunk.css.map": "/Curneu-Assessment/static/css/main.81651906.chunk.css.map",
+    "static/js/2.dd95d419.chunk.js.LICENSE.txt": "/Curneu-Assessment/static/js/2.dd95d419.chunk.js.LICENSE.txt",
+    "static/js/pdf.worker.entry.ec30ce84.worker.js": "/Curneu-Assessment/static/js/pdf.worker.entry.ec30ce84.worker.js",
+    "static/js/pdf.worker.entry.ec30ce84.worker.js.LICENSE.txt": "/Curneu-Assessment/static/js/pdf.worker.entry.ec30ce84.worker.js.LICENSE.txt",
+    "static/js/pdf.worker.entry.ec30ce84.worker.js.map": "/Curneu-Assessment/static/js/pdf.worker.entry.ec30ce84.worker.js.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.442ccfda.js",
+    "static/js/2.dd95d419.chunk.js",
+    "static/css/main.81651906.chunk.css",
+    "static/js/main.f9e7fad4.chunk.js"
+  ]
+}
